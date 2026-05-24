@@ -36,6 +36,6 @@ The application uses the HTML5 Canvas Graphics API for rendering all game object
 # Technologies Used
 
 - HTML5
-- CSS3
-- JavaScript (Vanilla JS)
+- CSS
+- JavaScript
 - HTML5 Canvas API
