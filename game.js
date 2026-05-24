@@ -207,7 +207,7 @@ function update(dt, timestamp) {
   }
   ship.thrustParticles = ship.thrustParticles.filter(p => p.life > 0);
 
-//asteroid spawning and difficulty levels
+//asteroid spawning and difficulty levels, to make life interesting might decrease speed of ship and increse asteroids
   asteroidSpawnTimer -= dt;
   const spawnInterval = Math.max(0.4, 1.8 - level * 0.12);
   if (asteroidSpawnTimer <= 0) {
