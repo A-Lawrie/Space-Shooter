@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Space Shooter — 2D Space Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- =====================================================================
+       OVERLAY SCREENS
+       ===================================================================== -->
+  <div id="startScreen" class="overlay">
+    <div class="overlay-box">
+      <div class="logo-line">SPACE</div>
+      <div class="logo-sub">S H O O T E R</div>
+      <p class="instructions">
+        <span><kbd>←</kbd><kbd>→</kbd> Move</span>
+        <span><kbd>Space</kbd> Shoot</span>
+      </p>
+      <button id="startBtn">LAUNCH MISSION</button>
+    </div>
+  </div>
+
+  <div id="gameOverScreen" class="overlay hidden">
+    <div class="overlay-box">
+      <div class="logo-line" style="font-size:2.2rem;">GAME OVER</div>
+      <p id="finalScore" class="final-score">Score: 0</p>
+      <button id="restartBtn">RETRY</button>
+    </div>
+  </div>
+
+  
+  <div id="hud">
+    <span id="scoreDisplay">SCORE: 0</span>
+    <span id="livesDisplay">LIVES: ♥♥♥</span>
+    <span id="levelDisplay">LEVEL: 1</span>
+  </div>
+
+  
+  <canvas id="gameCanvas"></canvas>
+
+  <script src="game.js"></script>
+</body>
+</html>
